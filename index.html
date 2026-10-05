@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cultural Club Auditions | Jain University</title>
+<meta name="description" content="Design Club, Pixel Poetry and Fashion Team auditions on 25 and 26 September at Jain University.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#120a14;--ink:#f6eef2;--mute:rgba(246,238,242,.68);--line:rgba(246,238,242,.16);--acc:#ff3d8b;--amb:#ffb347;--r:260px}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;letter-spacing:-.01em;line-height:1.5}
+.serif{font-family:'Playfair Display',Georgia,serif;font-style:italic;font-weight:500}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--amb);outline-offset:3px}
+.btn{display:inline-block;border:0;cursor:pointer;font:600 .95rem Inter,sans-serif;padding:.8rem 1.6rem;border-radius:99px;background:var(--acc);color:#fff;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:scale(1.03);box-shadow:0 8px 28px rgba(255,61,139,.35)}
+.btn:active{transform:scale(.96)}
+.btn.ghost{background:rgba(255,255,255,.14);backdrop-filter:blur(8px);border:1px solid var(--line)}
+nav{position:fixed;inset:0 0 auto;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1rem 1.25rem}
+nav .logo{font-size:1.5rem;text-decoration:none}
+nav .links{display:none;gap:.25rem;background:rgba(255,255,255,.12);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:99px;padding:.4rem;position:absolute;left:50%;transform:translateX(-50%)}
+nav .links a{padding:.35rem 1rem;border-radius:99px;font-size:.88rem;font-weight:500;text-decoration:none;color:var(--mute)}
+nav .links a:hover{background:rgba(255,255,255,.15);color:#fff}
+@media(min-width:760px){nav .links{display:flex}}
+/* hero */
+.hero{position:relative;height:100vh;height:100dvh;overflow:hidden;background:#000}
+.layer{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.base{background:radial-gradient(120% 90% at 20% 10%,#2a1530,#120a14 60%)}
+.base .big{color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.14)}
+.reveal{background:conic-gradient(from 210deg at 30% 60%,#ff3d8b,#ffb347,#2ee6d0,#5b6dff,#ff3d8b);
+ -webkit-mask-image:radial-gradient(circle var(--r) at var(--x,-999px) var(--y,-999px),#000 0,#000 40%,rgba(0,0,0,.75) 60%,rgba(0,0,0,.4) 75%,rgba(0,0,0,.12) 88%,transparent 100%);
+ mask-image:radial-gradient(circle var(--r) at var(--x,-999px) var(--y,-999px),#000 0,#000 40%,rgba(0,0,0,.75) 60%,rgba(0,0,0,.4) 75%,rgba(0,0,0,.12) 88%,transparent 100%)}
+.reveal .big{color:rgba(18,10,20,.92);-webkit-text-stroke:0}
+.big{font-weight:600;font-size:clamp(5rem,22vw,20rem);letter-spacing:-.07em;line-height:.8;text-align:center;user-select:none;pointer-events:none}
+.hero-copy{position:absolute;z-index:50;top:15%;left:0;right:0;text-align:center;padding:0 1.25rem;pointer-events:none}
+.hero-copy h1{font-weight:400;line-height:.95;font-size:clamp(2.8rem,9vw,7rem);text-shadow:0 2px 30px rgba(0,0,0,.5)}
+.hero-copy h1 span{display:block;animation:rise 1.1s cubic-bezier(.16,1,.3,1) both}
+.hero-copy h1 span+span{letter-spacing:-.07em;animation-delay:.2s}
+.hero-foot{position:absolute;z-index:50;left:1.25rem;right:1.25rem;bottom:2rem;display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:space-between;align-items:flex-end}
+.hero-foot p{max-width:270px;font-size:.9rem;color:var(--mute)}
+#count{display:flex;gap:.9rem;margin-bottom:1rem}
+#count div{min-width:3.2rem}
+#count b{display:block;font-size:2rem;font-weight:600;line-height:1;font-variant-numeric:tabular-nums}
+#count small{font-size:.75rem;color:var(--mute)}
+#state{font-size:1.1rem;font-weight:500;margin-bottom:1rem}
+@keyframes rise{from{opacity:0;transform:translateY(28px);filter:blur(12px)}to{opacity:1;transform:none;filter:none}}
+/* sections */
+section.pad{padding:5.5rem 1.25rem;max-width:1080px;margin:auto}
+h2{font-size:clamp(2rem,5vw,3.2rem);font-weight:500;letter-spacing:-.05em;line-height:1.05;margin-bottom:.6rem}
+.sub{color:var(--mute);max-width:520px;margin-bottom:2.2rem}
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}
+.card{border:1px solid var(--line);border-radius:22px;padding:1.5rem;display:flex;flex-direction:column;gap:.8rem;background:linear-gradient(160deg,rgba(255,255,255,.05),transparent);transition:border-color .2s}
+.card:hover{border-color:var(--acc)}
+.card h3{font-size:1.6rem;font-weight:500;letter-spacing:-.04em}
+.card p{color:var(--mute);font-size:.93rem}
+.meta{font-size:.85rem;color:var(--amb)}
+.row{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:auto}
+.tag{display:inline-block;font-size:.78rem;padding:.2rem .7rem;border:1px solid var(--line);border-radius:99px;color:var(--mute);align-self:flex-start}
+.chip.on{background:var(--amb);color:#120a14}
+/* schedule */
+.days{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.day{border-left:2px solid var(--acc);padding-left:1.2rem}
+.day h3{font-size:1.4rem;margin-bottom:.8rem;font-weight:500}
+.day li{list-style:none;padding:.65rem 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:1rem}
+.day li span:last-child{color:var(--mute);font-size:.88rem;text-align:right}
+footer{border-top:1px solid var(--line);padding:2.5rem 1.25rem;text-align:center;color:var(--mute);font-size:.9rem}
+footer a{color:var(--ink)}
+/* dialog */
+dialog{margin:auto;width:min(92vw,460px);border:1px solid var(--line);border-radius:24px;background:#1b1020;color:var(--ink);padding:1.8rem}
+dialog::backdrop{background:rgba(0,0,0,.65);backdrop-filter:blur(4px)}
+dialog[open]{animation:pop .25s ease}
+@keyframes pop{from{opacity:0;transform:scale(.95)}}
+dialog h3{font-size:1.7rem;font-weight:500;margin-bottom:.4rem}
+dialog ul{padding-left:1.1rem;color:var(--mute);margin:.8rem 0 1.2rem}
+dialog .row{margin-top:1rem}
+.empty{color:var(--mute)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="logo serif" href="#top">Cultural Club</a>
+  <div class="links"><a href="#auditions">Auditions</a><a href="#schedule">Schedule</a><a href="#follow">Follow</a></div>
+  <button class="btn ghost" id="listBtn">My list (<span id="n">0</span>)</button>
+</nav>
+
+<header class="hero" id="top">
+  <div class="layer base" aria-hidden="true"><div class="big">AUDITIONS</div></div>
+  <div class="layer reveal" id="reveal" aria-hidden="true"><div class="big">AUDITIONS</div></div>
+  <div class="hero-copy">
+    <h1><span class="serif">Your stage</span><span>is open</span></h1>
+  </div>
+  <div class="hero-foot">
+    <p>Design Club, Pixel Poetry and Fashion Team are looking for new members at Jain University. Pick the ones you want and build your list.</p>
+    <div>
+      <div id="state"></div>
+      <div id="count" aria-live="off"></div>
+      <a class="btn" href="#auditions">Choose your audition</a>
+    </div>
+  </div>
+</header>
+
+<section class="pad" id="auditions">
+  <h2><span class="serif">Three</span> auditions, two days</h2>
+  <p class="sub">Tap a card for details. Add the ones you plan to attend and they are saved on this device.</p>
+  <div class="grid" id="cards"></div>
+</section>
+
+<section class="pad" id="schedule">
+  <h2>Schedule</h2>
+  <p class="sub">All three auditions run on both days. Exact slots and venue are announced on Instagram.</p>
+  <div class="days" id="days"></div>
+</section>
+
+<footer id="follow">
+  <p>Follow <a href="https://www.instagram.com/culturalclub.fet/" target="_blank" rel="noopener">@culturalclub.fet</a> on Instagram for slots, venue and results.</p>
+  <p style="margin-top:.4rem">Made with AI-assisted vibe coding at the FOSS Club Student Development Program.</p>
+</footer>
+
+<dialog id="dlg"></dialog>
+
+<script>
+/* ===== EDIT HERE ===== */
+const START = new Date("2026-09-25T09:00:00+05:30");   // first audition day
+const END   = new Date("2026-09-26T18:00:00+05:30");   // last audition day ends
+const AUDITIONS = [
+  {id:"design", name:"Design Club", tag:"Design", when:"25 and 26 September", slot:"Time: see Instagram",
+   blurb:"For people who think in layouts, type and colour.",
+   prep:["Bring 2 or 3 pieces of your work, digital or printed","Be ready to talk through one design decision","Laptop or tablet is optional"]},
+  {id:"pixel", name:"Pixel Poetry", tag:"Visual storytelling", when:"25 and 26 September", slot:"Time: see Instagram",
+   blurb:"For people who tell stories through images and pixels.",
+   prep:["Bring a short sample of your work","Prepare a one-minute pitch about your style","Come with an idea you would like to make"]},
+  {id:"fashion", name:"Fashion Team", tag:"Fashion", when:"25 and 26 September", slot:"Time: see Instagram",
+   blurb:"For people who love styling, ramp walks and showmanship.",
+   prep:["Wear an outfit that shows your style","Prepare a short walk or styling pitch","Arrive 10 minutes early to warm up"]}
+];
+/* ===================== */
+
+const $ = s => document.querySelector(s);
+let list = [];
+try { list = JSON.parse(localStorage.getItem("auditionList") || "[]"); } catch(e){}
+const save = () => { try { localStorage.setItem("auditionList", JSON.stringify(list)); } catch(e){} $("#n").textContent = list.length; render(); };
+const has = id => list.includes(id);
+const toggle = id => { list = has(id) ? list.filter(x => x !== id) : [...list, id]; save(); };
+
+function render(){
+  $("#cards").innerHTML = AUDITIONS.map(a => `
+    <article class="card">
+      <span class="tag">${a.tag}</span>
+      <h3>${a.name}</h3>
+      <p>${a.blurb}</p>
+      <div class="meta">${a.when}</div>
+      <div class="row">
+        <button class="btn ghost" data-open="${a.id}">Details</button>
+        <button class="btn ${has(a.id)?"chip on":""}" data-add="${a.id}">${has(a.id)?"Added":"Add to my list"}</button>
+      </div>
+    </article>`).join("");
+  $("#days").innerHTML = ["25 September","26 September"].map(d => `
+    <div class="day"><h3 class="serif">${d}</h3><ul>${AUDITIONS.map(a=>`<li><span>${a.name}</span><span>${a.slot.replace("Time: ","")}</span></li>`).join("")}</ul></div>`).join("");
+}
+document.addEventListener("click", e => {
+  const o = e.target.closest("[data-open]"), a = e.target.closest("[data-add]");
+  if (o) openDetails(o.dataset.open);
+  if (a) toggle(a.dataset.add);
+});
+
+const dlg = $("#dlg");
+function openDetails(id){
+  const a = AUDITIONS.find(x => x.id === id);
+  dlg.innerHTML = `<h3>${a.name}</h3><div class="meta">${a.when} · ${a.slot}</div>
+    <p style="margin-top:.6rem;color:var(--mute)">${a.blurb}</p>
+    <strong style="display:block;margin-top:1rem">What to prepare</strong><ul>${a.prep.map(p=>`<li>${p}</li>`).join("")}</ul>
+    <div class="row"><button class="btn ${has(id)?"chip on":""}" id="dAdd">${has(id)?"Remove from my list":"Add to my list"}</button><button class="btn ghost" id="dClose">Close</button></div>`;
+  dlg.showModal();
+  $("#dAdd").onclick = () => { toggle(id); dlg.close(); };
+  $("#dClose").onclick = () => dlg.close();
+}
+$("#listBtn").onclick = () => {
+  const mine = AUDITIONS.filter(a => has(a.id));
+  dlg.innerHTML = `<h3>My audition list</h3>` + (mine.length
+    ? `<ul>${mine.map(a=>`<li><b>${a.name}</b>: ${a.when}</li>`).join("")}</ul><p class="empty">Details such as time and venue are on Instagram.</p>`
+    : `<p class="empty" style="margin:.6rem 0">Nothing here yet. Add an audition from the cards below.</p>`)
+    + `<div class="row"><button class="btn ghost" id="dClose">Close</button></div>`;
+  dlg.showModal(); $("#dClose").onclick = () => dlg.close();
+};
+dlg.addEventListener("click", e => { if (e.target === dlg) dlg.close(); });
+
+/* countdown */
+function tick(){
+  const now = new Date(), st = $("#state"), c = $("#count");
+  if (now < START){
+    const s = Math.floor((START - now)/1000), p = n => String(n).padStart(2,"0");
+    st.textContent = "Auditions start in";
+    c.innerHTML = [["Days",Math.floor(s/86400)],["Hours",Math.floor(s%86400/3600)],["Min",Math.floor(s%3600/60)],["Sec",s%60]]
+      .map(([l,v]) => `<div><b>${p(v)}</b><small>${l}</small></div>`).join("");
+  } else if (now <= END){ st.textContent = "Auditions are on right now"; c.innerHTML = ""; }
+  else { st.textContent = "Auditions are over. Results on Instagram."; c.innerHTML = ""; }
+}
+tick(); setInterval(tick, 1000);
+
+/* cursor spotlight: eased follow, drifts on its own for touch screens */
+const rv = $("#reveal"); let mx = innerWidth/2, my = innerHeight/2, sx = mx, sy = my, touched = false;
+addEventListener("mousemove", e => { mx = e.clientX; my = e.clientY; touched = true; });
+addEventListener("touchmove", e => { mx = e.touches[0].clientX; my = e.touches[0].clientY; touched = true; }, {passive:true});
+(function loop(t){
+  if (!touched){ mx = innerWidth/2 + Math.cos(t/1800)*innerWidth*.3; my = innerHeight/2 + Math.sin(t/1300)*innerHeight*.2; }
+  sx += (mx - sx)*.1; sy += (my - sy)*.1;
+  rv.style.setProperty("--x", sx + "px"); rv.style.setProperty("--y", sy + "px");
+  rv.style.setProperty("--r", Math.min(260, innerWidth*.45) + "px");
+  requestAnimationFrame(loop);
+})(0);
+
+save();
+</script>
+</body>
+</html>
